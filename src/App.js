@@ -4,6 +4,8 @@ import NavBar from "./components/NavBar"
 import Footer from './components/Footer';
 import Producto from './components/Producto';
 import Bienvenida from './components/Bienvenida';
+import ListadoDeProductosContainer from './components/ListadoDeProductosContainer';
+import ListadoDeProductosLayout from './components/ListadoDeProductosLayout';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
       <NavBar />
       
       <Bienvenida />
+
+   
 
       <Producto item={producto1} color={"coral"} alertHolaMundo={alertHolaMundo}/>
       <Producto item={producto2} color={"red"}/>
