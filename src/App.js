@@ -4,8 +4,9 @@ import NavBar from "./components/NavBar"
 import Footer from './components/Footer';
 import Producto from './components/Producto';
 import Bienvenida from './components/Bienvenida';
-import ListadoDeProductosContainer from './components/ListadoDeProductosContainer';
-import ListadoDeProductosLayout from './components/ListadoDeProductosLayout';
+import ItemListContainer from './components/ItemListContainer';
+import ItemListLayout from './components/ItemListLayout';
+
 
 function App() {
 
@@ -23,8 +24,8 @@ function App() {
       
       <Bienvenida />
 
-   
-
+  
+      <ItemListContainer saludo="Hola Mundo!"/>
       <Producto item={producto1} color={"coral"} alertHolaMundo={alertHolaMundo}/>
       <Producto item={producto2} color={"red"}/>
       <Producto item={producto3} color={"blue"}/>

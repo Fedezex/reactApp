@@ -7,7 +7,7 @@ export default function Producto({ item, color, alertHolaMundo }) {
   return (
     <div style={{backgroundColor: color, marginLeft: "50px"}}>
       <h2>{item.name}</h2>
-      <p>{item.price}</p>
+      <p>Precio ${item.price}</p>
       <p>{item.id}</p>
     </div>
   )
