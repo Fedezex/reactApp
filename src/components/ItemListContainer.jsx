@@ -1,25 +1,21 @@
 import React, { Fragment } from 'react'
-import ItemListLayout from './ItemListLayout'
+import ItemCount from './ItemCount'
+import Title from './Title'
 
-// export default function ItemListContainer() {
-//     const productos = [
-//         {id: 1, name: "zapatos nike", precio: 100},
-//         {id: 2, name: "zapatos adidas", precio: 100},
-//         {id: 3, name: "zapatos reebok", precio: 100},
-//         {id: 4, name: "zapatos under-armor", precio: 100}]
 
-//         //fetch("pokeapi.com/pokes" / json)
-//         //normal //ordenador //paginar //decir el largo de cada pagina
-//   return (
-//     <ItemListLayout productos={productos} />
-//   )
-// }
-
-const ItemListContainer = (props) => {
+export const ItemListContainer = ({texto}) => {
+  
+  const onAdd = (quantity) => {
+    console.log(`Compraste ${quantity} unidades`);
+  }
+  
+  
+  
   return (
-    <Fragment>
-      <h2 style={{marginLeft: "50px"}}>{props.saludo}</h2>
-    </Fragment>
+    <>
+    <Title greeting={texto}/>
+    <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+    </>
   )
 }
 
