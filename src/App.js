@@ -7,6 +7,7 @@ import Bienvenida from './components/Bienvenida';
 import ItemListContainer from './components/ItemListContainer';
 import ItemListLayout from './components/ItemListLayout';
 import ItemCount from './components/ItemCount';
+import Promises from './Test/Promises';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       
       <Bienvenida />
 
-  
+      <Promises/>
       <ItemListContainer saludo="Hola Mundo!"/>
       
       <Producto item={producto1} color={"coral"}/>
