@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer';
 
 
 
+
 function App() {
 
   return (
@@ -12,7 +13,7 @@ function App() {
       <NavBar />
 
       <ItemListContainer />
-  
+      {/* <Fetch /> */}
       <Footer/>
     </div>
   );
