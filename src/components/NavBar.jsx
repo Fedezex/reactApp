@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 
 const pages = ['Products', 'Pricing', 'Blog'];
@@ -43,6 +44,7 @@ const NavBar = () => {
         <Toolbar disableGutters>
           
         <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Link to='/'> </Link>
           <Typography
             variant="h6"
             noWrap
@@ -58,7 +60,7 @@ const NavBar = () => {
               textDecoration: 'none',
             }}
           >
-            A4 INDUSTRIAS GRAFICAS
+            POWER GAMES 
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
