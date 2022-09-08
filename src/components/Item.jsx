@@ -6,17 +6,20 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActions from '@mui/material/CardActions';
+import { Link } from 'react-router-dom';
 
-export default function MediaCard({info}) {
+function Item({info}) {
+
     return (
     
       <Card sx={{ maxWidth: 345 }}>
-        
+        <Link to={`/idproduct/${info.id}`}>
         <CardMedia
           component="img"
           image={info.image}
-          alt="game image"
+          alt={info.title}
         />
+        </Link>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {info.title}
@@ -32,3 +35,5 @@ export default function MediaCard({info}) {
       
     );
   }
+
+  export default Item

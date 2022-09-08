@@ -16,8 +16,8 @@ import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['RPG', 'Action', 'Blog'];
+const settings = ['Perfil', 'Cuenta', 'Dashboard', 'Logout'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
