@@ -9,17 +9,17 @@ const games = [
 
 export const ItemDetailContainer = () => {
   const [data, setData] = useState({})
-  const {idproduct} = useParams ()
+  const {productId} = useParams ()
 
   useEffect(() => {
     const getData = new Promise(resolve =>{
       setTimeout(() =>{
         resolve(games)
-      }, 2000)
+      }, 1000)
     })
   
-    getData.then(res => setData(res.find(game => game.id === idproduct)));
-  }, [idproduct])
+    getData.then(res => setData(res.find(game => game.id === parseInt(productId))));
+  }, [productId])
   
 
   return (

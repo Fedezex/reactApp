@@ -13,7 +13,7 @@ function Item({info}) {
     return (
     
       <Card sx={{ maxWidth: 345 }}>
-        <Link to={`/idproduct/${info.id}`}>
+        <Link to={`/product/${info.id}`}>
         <CardMedia
           component="img"
           image={info.image}
