@@ -1,5 +1,5 @@
 import './ItemCount.css'
-import * as React from 'react';
+import React, {useContext} from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -7,8 +7,12 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActions from '@mui/material/CardActions';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../context/CartContext'
 
 function Item({info}) {
+
+    const nombre = useContext(CartContext)
+    console.log('item: ', nombre);
 
     return (
     
