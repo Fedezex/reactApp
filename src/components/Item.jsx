@@ -7,7 +7,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActions from '@mui/material/CardActions';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../context/CartContext'
+import {CartContext} from '../App'
+
 
 function Item({info}) {
 
