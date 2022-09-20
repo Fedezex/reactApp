@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 
 export const ItemDetail = ({data}) => {
-  const [goToCart, setgoToCart] = useState(false)
+  const [goToCart, setGoToCart] = useState(false)
   const {addProduct} = useCartContext()
 
   const onAdd = (quantity) => {
-    setgoToCart(true)
+    setGoToCart(true)
     addProduct(data, quantity)
   }
 

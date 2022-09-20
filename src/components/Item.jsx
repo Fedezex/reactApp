@@ -7,12 +7,12 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActions from '@mui/material/CardActions';
 import { Link } from 'react-router-dom';
-import {CartContext} from '../App'
+import {useCartContext} from '../context/CartContext'
 
 
 function Item({info}) {
 
-    const nombre = useContext(CartContext)
+    const nombre = useContext(useCartContext)
     console.log('item: ', nombre);
 
     return (
@@ -40,5 +40,18 @@ function Item({info}) {
       
     );
   }
+
+
+// const Item = ({ info }) => {
+//   const nombre = useContext(useCartContext)
+//   console.log('Item: ', nombre);
+
+//   return (
+//     <Link to={ `/detalle/${info.id}` } className='game'>
+//       <img src={info.image} alt="" />
+//       <p> {info.title} </p>
+//     </Link>
+//   )
+// }
 
   export default Item

@@ -10,7 +10,7 @@ import CartProvider from './context/CartContext';
 
 
 
-export const CartContext = React.createContext('')
+export const CartContext = React.createContext([])
 console.log('CartContext: ', CartContext);
 
 function App() {
