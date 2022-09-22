@@ -9,8 +9,8 @@ const ItemList = ({data = []}) => {
     <Grid 
     justifyContent="center" container spacing={2} rowSpacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 4, md: 8 }}>
         {data.map((game) => (
-        <Grid item xs={3}>
-            <Item key={game.id} info = {game} >xs=6</Item>
+        <Grid item xs={3} key={game.id}>
+            <Item info = {game} >xs=6</Item>
         </Grid>
     ))}
     </Grid>
