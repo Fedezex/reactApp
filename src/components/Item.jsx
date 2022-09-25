@@ -13,7 +13,7 @@ import {useCartContext} from '../context/CartContext'
 function Item({info}) {
 
     const nombre = useContext(useCartContext)
-    console.log('item: ', nombre);
+    
 
     return (
     
